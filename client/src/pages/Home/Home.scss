@@ -1,0 +1,28 @@
+@import '../../sass/variables.scss';
+
+.container-home {
+    height: 100vh;
+    background-image: linear-gradient(to right, rgba(0,0,0,.6), rgba(0,0,0,.6)), url('../../images/bgi_highway.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.home__text-container {
+    position: absolute;
+    font-size: 2rem;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.home__list {
+    display: flex;
+    list-style: none;
+
+
+    &-item {
+        
+        padding: 2rem;
+    }
+}
+

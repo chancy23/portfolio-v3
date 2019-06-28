@@ -1,0 +1,74 @@
+@import '../../sass/variables.scss';
+
+.header {
+    display: flex;
+    align-items: center;
+
+    &__logo-wrapper {
+        margin-left: 4rem;
+        padding: .5rem;
+        padding-top: 1.75rem;
+        background-color: $color-light-grey;
+        width: 6.5rem;
+        height: 8rem;
+        cursor: pointer;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .2s;
+
+        // &:hover {
+        //     height: 6rem;
+        //     padding: 0;
+        // }  
+    }
+
+    &__text-wrapper {
+        display: none;
+        background-color: $color-light-grey;
+        font-size: 1.5rem;
+        height: 8rem;
+        width: 0;
+        // padding: 1rem;
+        transition: all .2s;
+
+        &:hover {
+            display: flex;
+            align-items: center;
+            // if remove this here, leaves the links in white
+            //kind of cool may remove later
+            width: 20%;
+            height: 8rem;
+        }
+
+        // &-list {
+        //     list-style: none;
+        //     display: flex;
+        // }
+
+        // &__list-item {
+        //     padding: 1rem;
+            
+        // }
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+    }
+
+    &__list-item {
+        padding: 1rem;
+        
+    }
+
+    &__logo-wrapper:hover + &__text-wrapper {
+        display: flex;
+        align-items: center;
+        width: 20%;
+        //look like its expanding from left to right
+    }
+
+    
+}

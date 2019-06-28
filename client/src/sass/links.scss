@@ -1,0 +1,17 @@
+.link {
+    text-decoration: none;
+    color: $color-primary;
+
+    &:hover {
+        color: darken($color-primary, 10%);
+    }
+}
+
+.page-link {
+    text-decoration: none;
+    color: $font-color-primary;
+  
+    &:hover {
+      color: $color-primary;
+    }
+}

@@ -1,0 +1,60 @@
+// import all files in sass folder here so that one import in app.js file
+@import 'variables';
+@import 'button';
+@import 'modal';
+@import 'links';
+@import 'utilities';
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%;
+  color: $font-color-primary;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.4rem;
+}
+
+h5 {
+    font-size: 1.2rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+p {
+    line-height: 1.4rem;
+    padding: .5rem 0;
+}
+
+th,
+td {
+    text-align: center;
+    line-height: 1.3rem;
+    
+}
+
+th {
+    padding: 0 2rem .5rem 2rem;
+    font-size: 1rem;
+}
+
+
+
+

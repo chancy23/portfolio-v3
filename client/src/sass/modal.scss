@@ -1,0 +1,105 @@
+.modal {
+    // this makes the entire page dark, and then put the main modal class on top
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+
+    &--display {
+        display: block;
+    }
+
+    &--hidden {
+        display: none;
+    }
+
+    &__main {
+        position:fixed;
+        top: 50%;
+        left: 50%;
+        background: $color-light-grey;
+        // make animated border later
+        border: .1rem solid $color-primary;
+        color: $font-color-secondary;
+        font-size: 1rem;
+        height: auto;
+        max-height: 90vh;
+        overflow: auto;
+        padding: 1rem;
+        width: 80%;
+        transform: translate(-50%,-50%);
+    }
+
+    &__text-header {
+        margin-bottom: .75rem;  
+    }
+
+    &__body-about {
+        display: flex; 
+        margin: 2rem; 
+        margin-right: 5rem;
+    }
+
+    &__image {
+        width: 25%;
+        height: 25%;
+        border-radius: 100rem;
+        // margin: 1rem 0;
+    }
+
+    // make text area curve around image
+    &__text-area {
+        font-size: 1rem;
+        margin-left: 1rem;
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 2rem;
+    }
+
+    &__button {
+        margin-right: 5rem;
+    }
+
+}
+
+.resume {
+
+    &__header {
+        margin-left: 5rem;
+        margin-top: 2rem;
+    }
+
+    &__section-head {
+        text-align: center;
+        margin: .5rem 0;
+    }
+
+    &__section-text {
+        margin: 0 5rem;
+    }
+
+    &__list {
+        padding: .5rem;
+        padding-left: 2rem;
+        line-height: 1.4rem;
+    }
+
+    &__link {
+        margin-left: 5rem;
+        margin-right: auto;
+    }
+
+    &__button {
+        margin-right: 5rem;
+    }
+
+    &__table {
+        margin: 0 auto;
+    }
+}
+

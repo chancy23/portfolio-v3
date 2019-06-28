@@ -1,0 +1,40 @@
+.btn-primary {
+    font-family: inherit;
+    font-size: .8rem;
+    background-color: $color-primary;
+    border: none;
+    color: white;
+    padding: .5rem 1rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+    transition: all .2s;
+
+    &:hover {
+        background-color: darken($color-primary, 15%);
+    }
+
+    &:active {
+        transform: translateY(.5rem);
+        outline: none;
+    }
+}
+
+.btn-flat {
+    font-family: inherit;
+    font-size: inherit;
+    color: $font-color-secondary;
+    border: none;
+    border-bottom: 2px solid transparent;
+    background: transparent;
+    cursor: pointer;
+    padding: 1rem .5rem;
+    transition: all .2s;
+
+    &:hover {
+        border-bottom: 2px solid $color-primary;
+    }
+
+    &:active {
+        // transform: translateY(.5rem);
+        outline: none;
+    }
+}
