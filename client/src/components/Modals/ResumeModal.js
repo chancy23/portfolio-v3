@@ -26,16 +26,20 @@ export const ResumeModal = () => {
                   <div className='resume__section-text'>
                     <table className='resume__table'>
                       <thead className='resume__table-head'>
-                        <th>Front End</th>
-                        <th>Libraries / Frameworks</th>
-                        <th>Back End / Database</th>
-                        <th>Other</th>
+                        <tr>
+                          <th>Front End</th>
+                          <th>Libraries / Frameworks</th>
+                          <th>Back End / Database</th>
+                          <th>Other</th>
+                        </tr>
                       </thead>
                       <tbody className='resume__table-body'>
-                        <td>HTML5<br/>CSS3<br/>JavaScript (ES6)<br/>Sass</td>
-                        <td>React<br/>jQuery<br/>Materialize<br/>Bootstrap<br/>Handlebars</td>
-                        <td>Node / NPM<br/>Express<br/>MongoDB<br/>MySQL<br/>REST/JSON API</td>
-                        <td>GitHub<br/>Slack<br/>Zoom<br/>Trello<br/>Visual Studio Code</td>
+                        <tr>
+                          <td>HTML5<br/>CSS3<br/>JavaScript (ES6)<br/>Sass</td>
+                          <td>React<br/>jQuery<br/>Materialize<br/>Bootstrap<br/>Handlebars</td>
+                          <td>Node / NPM<br/>Express<br/>MongoDB<br/>MySQL<br/>REST/JSON API</td>
+                          <td>GitHub<br/>Slack<br/>Zoom<br/>Trello<br/>Visual Studio Code</td>
+                        </tr>
                       </tbody>
                     </table>
                   </div>
