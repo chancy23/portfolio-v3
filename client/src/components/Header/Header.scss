@@ -18,10 +18,10 @@
         justify-content: center;
         transition: all .2s;
 
-        // &:hover {
-        //     height: 6rem;
-        //     padding: 0;
-        // }  
+        &:hover {
+            // height: 6rem;
+            padding-left: .5rem;
+        }  
     }
 
     &__text-wrapper {
@@ -38,19 +38,9 @@
             align-items: center;
             // if remove this here, leaves the links in white
             //kind of cool may remove later
-            width: 20%;
+            width: 100%;
             height: 8rem;
         }
-
-        // &-list {
-        //     list-style: none;
-        //     display: flex;
-        // }
-
-        // &__list-item {
-        //     padding: 1rem;
-            
-        // }
     }
 
     &__list {
@@ -59,15 +49,29 @@
     }
 
     &__list-item {
-        padding: 1rem;
-        
+        padding: 1rem;  
+    }
+
+    &__title {
+        margin-right: 4rem;
+        margin-left: auto;
+
+        &--flyout {
+            color: $color-primary;
+        }
     }
 
     &__logo-wrapper:hover + &__text-wrapper {
         display: flex;
         align-items: center;
-        width: 20%;
+        width: 100%;
+        
         //look like its expanding from left to right
+    }
+
+    &__logo-wrapper:hover ~ &__title,
+    &__text-wrapper:hover + &__title {
+        display: none;
     }
 
     

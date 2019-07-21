@@ -8,11 +8,22 @@
 }
 
 .home__text-container {
-    position: absolute;
-    font-size: 2rem;
-    top: 70%;
-    left: 50%;
-    transform: translateX(-50%)
+    &--primary { 
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 6rem;
+        text-align: center;
+    }
+
+    &--secondary {
+        position: absolute;
+        font-size: 2rem;
+        top: 65%;
+        left: 50%;
+        transform: translateX(-50%)
+    }
 }
 
 .home__list {
