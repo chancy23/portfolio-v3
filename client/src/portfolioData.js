@@ -9,7 +9,8 @@ const data = [
         technology: 'React React-Router Express Express-Sessions bcrypt Node MongoDB Axios API React-Materialize Google Fonts Google Icons',
         deployed: "https://tatuappv2.herokuapp.com/",
         repository: "https://github.com/penajtokyo/tatu.git",
-        image: tatuScreenshot
+        image: tatuScreenshot,
+        video: 'https://drive.google.com/file/d/1LYh8AjftOwv-AYl6SwVV3M26d5OF6Qcu/view?usp=sharing'
     },
     {
         name: 'Event Dash',
@@ -17,7 +18,8 @@ const data = [
         technology: 'HTML CSS Materialize Google Fonts JavaScript jQuery Firebase Smarty Streets API Google API Twitter API',
         deployed: 'https://chancy23.github.io/Event-Dash/',
         repository: 'https://github.com/chancy23/Event-Dash.git',
-        image: eventDashScreenshot
+        image: eventDashScreenshot,
+        video: 'https://drive.google.com/file/d/1jAc7bOjhDhrw7Kaimh_On2gnkUmdrWPh/view?usp=sharing'
     },
     {
         name: 'Fan Page',
@@ -25,7 +27,8 @@ const data = [
         technology: 'HTML CSS Javascript jQuery Handelbars Google Materialize and Google Fonts Node Express OMDB API Bands In Town API',
         deployed: 'https://cher-fan-page032019.herokuapp.com/',
         repository: 'https://github.com/chancy23/cher_fanpage.git',
-        image: 'https://i.makeagif.com/media/3-11-2019/swKc_s.gif'
+        image: 'https://i.makeagif.com/media/3-11-2019/swKc_s.gif',
+        video: 'https://drive.google.com/file/d/1Mk6-GXSGwgiJ84I_z5-zcAoDGGUKHO7e/view?usp=sharing'
     },
     {
         name: 'NYT Search',
@@ -33,7 +36,8 @@ const data = [
         technology: 'React React-Router Express Node MomentJS MongoDB Axios Google Materialize Google Fonts',
         deployed: 'https://nytsearch010319.herokuapp.com/',
         repository: 'https://github.com/chancy23/NYT-Search-React.git',
-        image: nytSearchScreenshot
+        image: nytSearchScreenshot,
+        video: 'https://drive.google.com/file/d/1mfJ8dyLgzGOlbFWd3mXdzOBdqipK88Yw/view?usp=sharing'
     },
 ]
 

@@ -1,3 +1,9 @@
 .icon {
-    fill: $color-primary
+    fill: $color-primary;
+
+    &--skills {
+        width: 7rem;
+        height: 7rem;
+        margin: 1rem;
+    }
 }

@@ -3,7 +3,8 @@ import Ticker from 'react-ticker';
 import { GlobalContext } from '../../context/GlobalState';
 import Header from "../../components/Header";
 import data from '../../portfolioData';
-import { CodeIcon, DisplayIcon} from '../../components/Icons';
+import { ResumeModal, AboutModal } from '../../components/Modals';
+import { CodeIcon, DisplayIcon, PlayIcon} from '../../components/Icons';
 
 import './Portfolio.scss';
 
@@ -20,15 +21,19 @@ const Portfolio = () => {
               {data.map((project, index) => (
                 <div key={index} className='project__container'>
                   <div className='project__wrapper'>
-                      <div className='project__container-front'>
-                        <h4 className='project__header'>{project.name}</h4>
-                        {/* <img className='project__image' src={project.image} alt={project.name}/> */}
-                        <div className='project__cta project__cta--deployed'><a className='project__btn' href={project.deployed}><DisplayIcon /></a></div>
-                        <div className='project__cta project__cta--repository' ><a className='project__btn' href={project.repository}><CodeIcon /></a></div>
-                      </div>
-                      <div className='project__container-back'>
-                        <p>{project.description}</p>
-                      </div>
+                    {/* <svg><rect></rect></svg> */}
+                    <div className='project__side project__side--front'>
+                      <h4 className='project__header'>{project.name}</h4>
+                    </div>
+                    <div className='project__side project__side--back'>
+                      <p>{project.description}</p>
+                    </div>
+                    <div className='project__cta'>
+                      <a className='project__btn project__btn--deployed' href={project.deployed} rel='noopener noreferrer' target='_blank'><DisplayIcon /></a>
+                      <a className='project__btn project__btn--repository' href={project.repository} rel='noopener noreferrer' target='_blank'><CodeIcon /></a>
+                      <a className='project__btn project__btn--video' href={project.video} rel='noopener noreferrer' target='_blank'><PlayIcon /></a>
+
+                    </div>
                   </div>
                   <Ticker height={25} speed={7}>
                   {() => (
@@ -38,6 +43,8 @@ const Portfolio = () => {
               </div>
               ))}
             </section>
+            <AboutModal />
+            <ResumeModal />
           </main>
         )
       }}
