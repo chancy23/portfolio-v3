@@ -171,7 +171,7 @@ export const ResumeModal = () => {
    
             <div className='modal__footer margin-top-small'>
               <a className='link resume__link' href='https://drive.google.com/file/d/1qloln6T-Zs8829QgRCYPAR6R3LB4lrji/view?usp=sharing' target='_blank' rel='noopener noreferrer'><PrinterIcon /></a>
-              <button className='btn-primary modal__button' onClick={context.hideModal}>Close</button>
+              <button className='btn btn__primary modal__button' onClick={context.hideModal}>Close</button>
             </div>               
           </div>
         </div>

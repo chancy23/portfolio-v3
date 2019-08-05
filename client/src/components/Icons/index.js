@@ -4,5 +4,6 @@ export * from './DisplayIcon';
 export * from './GalleryIcon';
 export * from './GithubIcon';
 export * from './LinkedInIcon';
+export * from './PhoneIcon';
 export * from './PlayIcon';
 export * from './PrinterIcon';

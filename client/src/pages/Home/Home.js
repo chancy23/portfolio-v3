@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { GlobalContext } from '../../context/GlobalState';
 import Header from '../../components/Header';
-import { ResumeModal, AboutModal } from '../../components/Modals';
+// import { ResumeModal, AboutModal } from '../../components/Modals';
 
 import './Home.scss';
 
@@ -25,8 +25,8 @@ const Home = () => {
               </ul>
 
             </section>
-            <AboutModal />
-            <ResumeModal />
+            {/* <AboutModal />
+            <ResumeModal /> */}
           </main>
         )
       }}

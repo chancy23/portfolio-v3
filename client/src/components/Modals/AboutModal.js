@@ -33,7 +33,7 @@ export const AboutModal = () => {
                 </div>
               </div>
               <div className="modal__footer">
-                <button className='btn-primary modal__button' onClick={context.hideModal}>Close</button>
+                <button className='btn btn__primary modal__button' onClick={context.hideModal}>Close</button>
               </div>
 
             </div>

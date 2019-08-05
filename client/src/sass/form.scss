@@ -1,0 +1,105 @@
+.form {
+
+    width: 100%;
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &__group {
+        padding-right: .75rem;
+        &:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+
+    }
+
+    &__input {
+        background-color: $color-light-grey;
+        border: none;
+        border-radius: .15rem;
+        color: inherit;
+        width: 100%;
+        height: 1.75rem;
+        margin-bottom: .25rem;
+        padding-left: .5rem;
+
+        &:focus {
+            border-bottom: .1rem solid blue;
+            outline: none;
+        }
+
+        &:focus:invalid {
+            border-bottom: .1rem solid red;
+            outline: none;
+        }
+
+        &::-webkit-input-placeholder {
+            color: lighten($font-color-secondary, 15%);
+        }
+
+        // &--small {
+
+        // }
+    }
+
+    &__select {
+        background-color: $color-light-grey;
+        border: none;
+        border-radius: .15rem;
+        color: lighten($font-color-secondary, 15%);
+        margin-bottom: .25rem;
+        height: 1.75rem;
+        width: 100%;
+
+        &:focus {
+            border-bottom: .1rem solid blue;
+            outline: none;
+        }
+        
+    }
+
+    &__text-area {
+        background-color: $color-light-grey;
+        border: none;
+        border-radius: .15rem;
+        width: 100%;
+        height: 7.5rem;
+        margin-bottom: .25rem;
+        padding: .5rem;
+
+        &:focus {
+            border-bottom: .1rem solid blue;
+            outline: none;
+        }
+
+        &::-webkit-text-area-placeholder,
+        &::placeholder {
+            color: lighten($font-color-secondary, 15%);
+        }
+        
+    }
+
+    &__label {
+        // margin-top: 2rem;
+        padding: .5rem;
+        margin-left: .2rem; 
+        transition: all .3s;  
+    }
+
+    &__input:placeholder-shown + &__label,
+    &__text-area:placeholder-shown + &__label {
+        //the opacity is what we can manipulate to make it dissappear and reappare below the input field
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-2rem);
+    }
+
+    &__button-row {
+        display: flex;
+        justify-content: center;
+        
+    }
+}

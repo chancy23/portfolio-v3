@@ -1,10 +1,10 @@
 @import '../../sass/variables.scss';
 
 .container-home {
-    height: 100vh;
     background-image: linear-gradient(to right, rgba(0,0,0,.6), rgba(0,0,0,.6)), url('../../images/bgi_highway.jpg');
     background-size: cover;
     background-position: center;
+    height: 100vh;
 }
 
 .home__text-container {
