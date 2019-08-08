@@ -1,3 +1,12 @@
+@import '../../sass/variables.scss';
+
+.container-skills {
+    background-image: linear-gradient(to right, rgba(0,0,0,.9), rgba(0,0,0,.9)), url('../../images/skills-bgi.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
 .skills {
     // background-color: gray;
     display: grid;
@@ -6,14 +15,16 @@
     grid-row-gap: 2.5rem;
     width: 75vw;
     margin: 2rem auto;
+    margin-top: 0;
 
     &__wrapper {
+        border-radius: .4rem;
         display: flex;
         flex-direction: column;
         align-items: center;
 
         &:hover {
-            background-color: black;
+            background-color: $color-lighter-black;
         }
 
         &--1 {

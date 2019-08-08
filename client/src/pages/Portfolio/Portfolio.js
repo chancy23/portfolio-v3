@@ -15,7 +15,7 @@ const Portfolio = () => {
     <GlobalContext.Consumer>
       {context => {
         return (
-          <main className='page'>
+          <main className='container-portfolio page'>
             <Header />
             <h1 className='center'>Projects</h1>
             <article className='project'>
@@ -27,7 +27,7 @@ const Portfolio = () => {
                       <h4 className='project__header'>{project.name}</h4>
                     </div>
                     <div className='project__side project__side--back'>
-                      <p>{project.description}</p>
+                      <p className='project__back-text'>{project.description}</p>
                     </div>
                     <div className='project__cta'>
                       <a className='project__btn project__btn--deployed' href={project.deployed} rel='noopener noreferrer' target='_blank'><DisplayIcon /></a>

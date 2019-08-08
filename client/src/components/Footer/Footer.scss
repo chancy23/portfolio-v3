@@ -1,5 +1,7 @@
+@import '../../sass/variables.scss';
+
 .nav__bottom {
-    background-color: black;
+    background-color: $color-lighter-black;
     height: 5rem;
     font-size: 2rem;
     padding: 1rem 4rem;

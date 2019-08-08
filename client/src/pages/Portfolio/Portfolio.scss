@@ -5,6 +5,12 @@
 //     background-position: center;
 //     height: 100%;
 // }
+.container-portfolio {
+    background-image: linear-gradient(to right, rgba(0,0,0,.8), rgba(0,0,0,.8)), url('../../images/portfolio-bgi2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
 
 .project {
     display: grid;
@@ -70,8 +76,6 @@
         }
     }
 
-    
-
     &__side {
         backface-visibility: hidden;
         width: 100%;
@@ -88,13 +92,17 @@
         // }
 
         &--back {
-            background-color: #000;
+            background-color: $color-lighter-black;
             font-size: 1.3rem;
             line-height: 2.5rem;
             padding: 1rem;
             transform: rotateY(180deg)
         }
 
+    }
+
+    &__back-text {
+        line-height: 1.6rem;
     }
 
 

@@ -21,7 +21,7 @@ import {
 
 const Skills = () => {
     return (
-        <main className='page container'>
+        <main className='page container-skills'>
             <Header />
             <h1 className='center'>Skills</h1>
             <article className='skills'>

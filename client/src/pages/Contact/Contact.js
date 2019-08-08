@@ -9,8 +9,11 @@ const Contact = () => {
   return (
   <GlobalContext.Consumer>
     {context => {
+
+    const showHide = context.state.displayMessage ? 'visible contact__message-display' : 'hidden' ;      
+
       return (
-        <main className='page'>
+        <main className='container-contact page'>
           <Header />
           {/* <h1 className='center'>Contact</h1> */}
           <article className='contact'>
@@ -45,7 +48,6 @@ const Contact = () => {
                     <label className='form__label'>Last Name</label>
                   </div>
                 </div>
-                
 
                 <div className='form__group'>
                   <input 
@@ -83,9 +85,9 @@ const Contact = () => {
                       onChange={context.handleInputChange}
                     >
                       <option value=''>Preferred Contact</option>
-                      <option value='email'>Email</option>
-                      <option value='text'>Text</option>
-                      <option value='call'>Call</option>
+                      <option value='Email'>Email</option>
+                      <option value='Text'>Text</option>
+                      <option value='Call'>Call</option>
                     </select>
                     <label className='form__label'>Preferred Contact</label>
                   </div>
@@ -106,14 +108,18 @@ const Contact = () => {
                   <button className='btn btn__primary' onClick={context.handleSubmitEmail}>Submit</button>
                   <button className='btn btn__cancel' onClick={context.handleClearForm}>Clear</button>
                 </div>
+                <div className={showHide}>{context.state.message}</div>
               </form>
             </section>
             <section className='contact__other-methods'>
               <h2 className='contact__section-header'>Other Ways to Reach Me</h2>
               <div className='contact__methods'>
-                <a href='https://www.linkedin.com/in/chancy-leath' target='_blank' rel='noopener noreferrer'><LinkedInIcon /></a>
-                <a href='https://github.com/chancy23' target='_blank' rel='noopener noreferrer'><GithubIcon /></a>
-                <div className='contact__phone'><PhoneIcon /><p className='contact__phone-text'>801-891-9265</p></div>
+                <a className='contact__link' href='https://www.linkedin.com/in/chancy-leath' target='_blank' rel='noopener noreferrer'><LinkedInIcon /></a>
+                <a className='contact__link' href='https://github.com/chancy23' target='_blank' rel='noopener noreferrer'><GithubIcon /></a>
+                <div className='contact__phone'>
+                  <PhoneIcon />
+                  <p className='contact__phone-text'>801-891-2965</p>
+                </div>
               </div>
             </section>
           </article>

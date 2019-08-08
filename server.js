@@ -1,6 +1,6 @@
 const express = require('express');
 // const mongoose = require('mongoose');
-// const routes = require('./routes');
+const routes = require('./routes');
 const path = require('path');
 const dotenv = require('dotenv').config();
 
@@ -20,7 +20,7 @@ app.use(express.static("public"));
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('client/build'));
-}
+};
 
 // Connect to the Mongo DB
 // let MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/resilientResinProducts';
@@ -34,7 +34,7 @@ if (process.env.NODE_ENV === 'production') {
 // console.log(MONGODB_URI);
 
 // Add routes, both API and view (view is handled by React, so no html routes will be needed)
-// app.use(routes);
+app.use(routes);
 
 //tells path when not using an API route
 app.get('/*', (req, res) => {
