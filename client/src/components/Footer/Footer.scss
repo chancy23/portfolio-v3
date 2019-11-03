@@ -1,12 +1,16 @@
 @import '../../sass/variables.scss';
+@import '../../sass/mixins.scss';
 
 .nav__bottom {
     background-color: $color-lighter-black;
     height: 5rem;
     font-size: 2rem;
     padding: 1rem 4rem;
+    position: fixed;
+    bottom: 0;
     width: 100%;
     // margin: 1rem 2rem;
+
 
     &__list {
         list-style: none;

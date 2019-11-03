@@ -1,31 +1,47 @@
 @import '../../sass/variables.scss';
+@import '../../sass/mixins.scss';
 
 .container-skills {
+    position: relative;
     background-image: linear-gradient(to right, rgba(0,0,0,.9), rgba(0,0,0,.9)), url('../../images/skills-bgi.jpg');
     background-size: cover;
     background-position: center;
-    height: 100%;
+    height: 120vh;
+
+    @include respond(mini-tab-land) {
+        height: 100vh;
+    }
+
+    @media only screen and (max-width: 850px) and (max-height: 425px) {
+        height: 100%;
+    }
+   
 }
 
 .skills {
-    // background-color: gray;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-column-gap: 2rem;
     grid-row-gap: 2.5rem;
     width: 75vw;
     margin: 2rem auto;
-    margin-top: 0;
+
+    @include respond(tab-port) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    @include respond(sm-phone) {
+        display: flex;
+        flex-wrap: wrap;
+        width: 90vw;
+        margin-left: 3rem;
+    }
 
     &__wrapper {
         border-radius: .4rem;
         display: flex;
         flex-direction: column;
         align-items: center;
-
-        &:hover {
-            background-color: $color-lighter-black;
-        }
 
         &--1 {
             grid-column: 2 / 3;

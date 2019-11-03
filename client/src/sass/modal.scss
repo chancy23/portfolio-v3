@@ -21,7 +21,6 @@
         top: 50%;
         left: 50%;
         background: $color-light-grey;
-        // make animated border later
         border: .1rem solid $color-primary;
         color: $font-color-secondary;
         font-size: 1rem;
@@ -32,6 +31,7 @@
         width: 80%;
         transform: translate(-50%,-50%);
         z-index: 200;
+
     }
 
     &__text-header {
@@ -65,6 +65,7 @@
 
     &__button {
         margin-right: 5rem;
+        // z-index: 5;
     }
 
 }
@@ -103,5 +104,5 @@
     &__table {
         margin: 0 auto;
     }
-}
 
+}

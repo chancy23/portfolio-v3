@@ -112,7 +112,7 @@ class GlobalState extends Component {
       messageDetails: '',
     })
 
-  }
+  };
 
   // write all methods for app here, and pass down in value of Providere
   render() {

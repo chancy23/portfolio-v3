@@ -1,44 +1,36 @@
-import tatuScreenshot from './images/portfolioScreenshots/Tatu_Home.png';
-import eventDashScreenshot from './images/portfolioScreenshots/eventDash.png';
-import nytSearchScreenshot from './images/portfolioScreenshots/NYTSearch.png';
-
 const data = [
     {
-        name: 'Tatu',
-        description: "This is a multi-user app built with the MERN stack (MongoDB, ExpressJS, NodeJS, ReactJS) with mobile first design. It allows artists to create profiles and upload images of their work that customers can then search and save to their favorites. My contribution: Overall design, built all front end components for the Customer page, built all back end routes/controllers for getting/posting images.",
-        technology: 'React React-Router Express Express-Sessions bcrypt Node MongoDB Axios API React-Materialize Google Fonts Google Icons',
-        deployed: "https://tatuappv2.herokuapp.com/",
-        repository: "https://github.com/penajtokyo/tatu.git",
-        image: tatuScreenshot,
+        name: 'Resilient Resin',
+        description: "An ecommerce site and owner portal for custom resin artwork. The products in the store are loaded by the business owner in an admin portal that also allows him to see and update orders, edit products and their images, and edit categories. Customers have a store (cart/checkout), photo gallery, about, contact, and an account page (if created during checkout).",
+        technology: 'React React-Router Sass SVG Icons Google Fonts Express Express-Sessions bcrypt Node Nodemailer MongoDB Axios Cloudinary Widget PayPal Buttons Mobile Responsive',
+        deployed: "https://www.resilientresin.com",
+        repository: "https://github.com/chancy23/resilient-resin",
         video: 'https://drive.google.com/file/d/1LYh8AjftOwv-AYl6SwVV3M26d5OF6Qcu/view?usp=sharing'
     },
     {
-        name: 'Event Dash',
-        description: 'Dashboard app to create and keep track of activities and events with your group (or groups) of friends all in one place, regardless of the platform your groups use. My contribution: Overall design and layout, built event creation form/modal and associated error messages, cards displaying event details, and modal showing event details.',
-        technology: 'HTML CSS Materialize Google Fonts JavaScript jQuery Firebase Smarty Streets API Google API Twitter API',
-        deployed: 'https://chancy23.github.io/Event-Dash/',
-        repository: 'https://github.com/chancy23/Event-Dash.git',
-        image: eventDashScreenshot,
-        video: 'https://drive.google.com/file/d/1jAc7bOjhDhrw7Kaimh_On2gnkUmdrWPh/view?usp=sharing'
+        name: 'Magnolia Bliss Magazine',
+        description: "A monthly emagazine and its hosting site. The magazine is dsiplayed via a jQuery flipbook plugin. The site also displays information on the various subscription plans, a way to buy subscriptions using Stripe, an account management page, and an about/contact page.",
+        technology: 'Handelbars Sass JavaScript jQuery Flipbook plugin Google Fonts Font Awesome Express Express-Sessions bcrypt Node Nodemailer MongoDB Axios Stripe Payments Mobile Responsive',
+        deployed: "https://www.magnoliablissmagazine.com",
+        repository: "https://github.com/chancy23/magnolia-bliss-magazine",
+        video: 'https://drive.google.com/file/d/1LYh8AjftOwv-AYl6SwVV3M26d5OF6Qcu/view?usp=sharing'
+    },
+    {
+        name: 'Tatu',
+        description: "A multi-user app built with the MERN stack. It allows artists to create profiles and upload images of their work that customers can then search and save to their favorites. My contribution: Overall design, built all front end components for the Customer page, built all back end routes/controllers for getting/posting images.",
+        technology: 'React React-Router Express Express-Sessions bcrypt Node MongoDB Axios API React-Materialize Google Fonts Google Icons Mobile Responsive',
+        deployed: "https://tatuappv2.herokuapp.com/",
+        repository: "https://github.com/penajtokyo/tatu.git",
+        video: 'https://drive.google.com/file/d/1LYh8AjftOwv-AYl6SwVV3M26d5OF6Qcu/view?usp=sharing'
     },
     {
         name: 'Fan Page',
         description: "This is a personal pet project showcasing the many talents of Cher. It is an unofficial fan page that I've used to encapsulate many of the technologies I've learned over the last year. Users can read a short bio, look at a photo gallery, take a trivia challenge, view upcoming concerts, and look up the movies Cher has been in.",
-        technology: 'HTML CSS Javascript jQuery Handelbars Google Materialize and Google Fonts Node Express OMDB API Bands In Town API',
+        technology: 'HTML CSS Javascript jQuery Handelbars Google Materialize and Google Fonts Node Express OMDB API Bands In Town API Mobile Responsive',
         deployed: 'https://cher-fan-page032019.herokuapp.com/',
         repository: 'https://github.com/chancy23/cher_fanpage.git',
-        image: 'https://i.makeagif.com/media/3-11-2019/swKc_s.gif',
         video: 'https://drive.google.com/file/d/1Mk6-GXSGwgiJ84I_z5-zcAoDGGUKHO7e/view?usp=sharing'
-    },
-    {
-        name: 'NYT Search',
-        description: 'This is a single page app built with the MERN stack (MongoDB, ExpressJS, NodeJS, ReactJS) and with mobile first in mind. It allows users to use a search form to find articles in the New York Times article API. The articles can be saved to the database and rendered in the Saved Articles section of the page to view later, or read by clicking the Read button in the Results area.',
-        technology: 'React React-Router Express Node MomentJS MongoDB Axios Google Materialize Google Fonts',
-        deployed: 'https://nytsearch010319.herokuapp.com/',
-        repository: 'https://github.com/chancy23/NYT-Search-React.git',
-        image: nytSearchScreenshot,
-        video: 'https://drive.google.com/file/d/1mfJ8dyLgzGOlbFWd3mXdzOBdqipK88Yw/view?usp=sharing'
-    },
+    }
 ]
 
 export default data;

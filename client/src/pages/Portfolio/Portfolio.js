@@ -4,7 +4,6 @@ import { GlobalContext } from '../../context/GlobalState';
 import Footer from '../../components/Footer';
 import Header from "../../components/Header";
 import data from '../../portfolioData';
-// import { ResumeModal, AboutModal } from '../../components/Modals';
 import { CodeIcon, DisplayIcon, PlayIcon} from '../../components/Icons';
 
 import './Portfolio.scss';
@@ -15,10 +14,10 @@ const Portfolio = () => {
     <GlobalContext.Consumer>
       {context => {
         return (
-          <main className='container-portfolio page'>
+          <main className='container-portfolio'>
             <Header />
-            <h1 className='center'>Projects</h1>
-            <article className='project'>
+            <h1 className='center'>My Work</h1>
+            <section className='project'>
               {data.map((project, index) => (
                 <div key={index} className='project__container'>
                   <div className='project__wrapper'>
@@ -33,7 +32,6 @@ const Portfolio = () => {
                       <a className='project__btn project__btn--deployed' href={project.deployed} rel='noopener noreferrer' target='_blank'><DisplayIcon /></a>
                       <a className='project__btn project__btn--repository' href={project.repository} rel='noopener noreferrer' target='_blank'><CodeIcon /></a>
                       <a className='project__btn project__btn--video' href={project.video} rel='noopener noreferrer' target='_blank'><PlayIcon /></a>
-
                     </div>
                   </div>
                   <Ticker height={25} speed={7}>
@@ -43,7 +41,7 @@ const Portfolio = () => {
                 </Ticker>
               </div>
               ))}
-            </article>
+            </section>
             <Footer />
           </main>
         )

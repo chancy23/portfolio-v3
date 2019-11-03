@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import GlobalState from './context/GlobalState'
-
 import Contact from './pages/Contact';
 import Home from './pages/Home';
 import Portfolio from './pages/Portfolio';
@@ -17,12 +16,12 @@ class App extends Component {
     return (
       <Router>
         <GlobalState>
-          <Switch>
-            <Route exact path={'/'} component={Home} />
-            <Route exact path={'/portfolio'} component={Portfolio} />
-            <Route exact path={'/skills'} component={Skills} />
-            <Route exact path={'/contact'} component={Contact} />
-          </Switch>
+            <Switch location={this.props.location}>
+              <Route exact path={'/'} component={Home} />
+              <Route exact path={'/portfolio'} component={Portfolio} />
+              <Route exact path={'/skills'} component={Skills} />
+              <Route exact path={'/contact'} component={Contact} />
+            </Switch>
         </GlobalState>
       </Router>
     );

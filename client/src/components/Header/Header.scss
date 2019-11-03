@@ -3,6 +3,7 @@
 .header {
     display: flex;
     align-items: center;
+    margin-bottom: 2rem;
 
     &__logo-wrapper {
         margin-left: 4rem;
@@ -32,6 +33,7 @@
         width: 0;
         // padding: 1rem;
         transition: all .2s;
+        // transition: all cubic-bezier(.17,.67,.83,.67) .5s;
 
         &:hover {
             display: flex;

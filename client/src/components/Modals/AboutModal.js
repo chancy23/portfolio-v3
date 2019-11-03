@@ -12,7 +12,6 @@ export const AboutModal = () => {
         return (
           <div className={showHide}>
             <div className='modal__main'>
-
               <div className='modal__body-about'>
                 <img className='modal__image' src={profileImage} alt='Chancy Leath'></img>
                 <div className='modal__text-area'>

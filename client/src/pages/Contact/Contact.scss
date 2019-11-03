@@ -1,10 +1,16 @@
 @import '../../sass/variables.scss';
+@import '../../sass/mixins.scss';
 
 .container-contact {
+    position: relative;
     background-image: linear-gradient(to right, rgba(0,0,0,.8), rgba(0,0,0,.8)), url('../../images/technology-bgi.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
+
+    @media only screen and (max-width: 850px) and (max-height: 425px) {
+        height: 100%;
+    }
 }
 
 .contact {
@@ -14,6 +20,22 @@
     grid-row-gap: 3rem;
     width: 60vw;
     margin: 0 auto; //margin bottom if needed 5.75rem;
+
+    @include respond(tab-land) {
+        grid-column-gap: 2rem;
+        width: 80vw;
+
+    }
+
+    @include respond(mini-tab-port) {
+        grid-template-columns: 100%;
+        width: 60vw;
+    }
+
+    @include respond(sm-phone) {
+        margin-bottom: 2rem;
+        width: 80vw;
+    }
 
     &__page-header {
         grid-column: 1 / -1;
@@ -26,7 +48,6 @@
     }
 
     
-
     &__methods {
         display: flex;
         flex-direction: column;
@@ -44,9 +65,10 @@
         height: 4rem;
         transition: all .2s;
 
-        &:hover {
+        &:last-child:hover {
             transform: scale(1.2);
         }
+
     }
 
     &__phone {

@@ -13,7 +13,7 @@ const Contact = () => {
     const showHide = context.state.displayMessage ? 'visible contact__message-display' : 'hidden' ;      
 
       return (
-        <main className='container-contact page'>
+        <main className="container-contact">
           <Header />
           {/* <h1 className='center'>Contact</h1> */}
           <article className='contact'>
@@ -123,7 +123,7 @@ const Contact = () => {
               </div>
             </section>
           </article>
-         <Footer />
+          <Footer />
         </main>
       )
     }}

@@ -5,6 +5,7 @@ import './Logo.scss';
 const Logo = () => {
     return (
         <svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <title>Home | Chancy Leath</title>
             <g>
                 <path className="st0" d="M72.91,89.78c-2.69,2-6.1,3.41-10.25,4.2s-8.54,1.19-13.18,1.19c-5.45,0-10.64-0.9-15.56-2.7
                     c-4.92-1.8-9.26-4.55-13-8.27c-3.74-3.72-6.71-8.44-8.91-14.16c-2.2-5.72-3.3-12.51-3.3-20.37c0-8.19,1.22-15.17,3.66-20.93
