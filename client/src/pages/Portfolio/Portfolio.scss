@@ -18,7 +18,19 @@
     // width: 60vw;
     justify-content: center;
     margin: 2rem auto;
-    padding-bottom: 8rem;
+    padding-bottom: 10rem;
+    //height: 100%;
+
+    @media only screen and (max-width: 64em) and (orientation: portrait) {
+        padding-bottom: 20rem;
+    }
+    @media only screen and (max-width: 64em) and (orientation: landscape) {
+        padding-bottom: 10rem;
+    }
+
+    @include respond(tab-port) {
+        padding-bottom: 15rem;
+    }
 
     @include respond(phone) {
         grid-template-columns: max-content;

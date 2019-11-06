@@ -14,7 +14,7 @@ const Home = () => {
             <Header />
             <section className='home__text-container--primary'>
               {/* <div>Chancy Leath</div> */}
-              <div>Create / Develop</div>
+              <div className='home__title'>Create <span>/</span> Develop</div>
             </section>
             <section className='home__text-container--secondary'>
               <ul className='home__list'>

@@ -1,7 +1,7 @@
 const data = [
     {
         name: 'Resilient Resin',
-        description: "An ecommerce site and owner portal for custom resin artwork. The products in the store are loaded by the business owner in an admin portal that also allows him to see and update orders, edit products and their images, and edit categories. Customers have a store (cart/checkout), photo gallery, about, contact, and an account page (if created during checkout).",
+        description: "An ecommerce site and owner portal for custom resin artwork. The products in the store are loaded by the business owner in an admin portal that also allows for seeing/updating orders, editing products and their images, and editing categories. Customers have a store (cart/checkout), photo gallery, about, contact, and an account pages (if created during checkout).",
         technology: 'React React-Router Sass SVG Icons Google Fonts Express Express-Sessions bcrypt Node Nodemailer MongoDB Axios Cloudinary Widget PayPal Buttons Mobile Responsive',
         deployed: "https://www.resilientresin.com",
         repository: "https://github.com/chancy23/resilient-resin",

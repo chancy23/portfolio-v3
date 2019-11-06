@@ -51,11 +51,16 @@
         padding: 1rem .5rem;
         transition: all .2s;
 
+        @media only screen and (max-width: 450px) {
+            padding: .5rem .25rem;
+        }
+
         &:hover {
             border-bottom: 2px solid $color-primary;
         }
 
-        &:active {
+        &:active,
+        &:focus {
             outline: none;
         }
     }

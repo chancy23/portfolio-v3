@@ -1,4 +1,5 @@
 @import '../../sass/variables.scss';
+@import '../../sass/mixins.scss';
 
 .header {
     display: flex;
@@ -48,10 +49,21 @@
     &__list {
         list-style: none;
         display: flex;
+
+        @media only screen and (max-width: 450px) {
+           flex-direction: column;
+           height: 100%;
+           margin-left: 1rem;
+           align-items: center;
+           justify-content: center;
+        }
     }
 
     &__list-item {
         padding: 1rem;  
+        @media only screen and (max-width: 450px) {
+            padding: .25rem;
+         }
     }
 
     &__title {
@@ -60,6 +72,11 @@
 
         &--flyout {
             color: $color-primary;
+
+            @include respond(sm-phone) {
+                margin-right: 1rem;
+                margin-left: 2rem;
+            }
         }
     }
 

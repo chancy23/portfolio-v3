@@ -6,9 +6,17 @@
     background-image: linear-gradient(to right, rgba(0,0,0,.9), rgba(0,0,0,.9)), url('../../images/skills-bgi.jpg');
     background-size: cover;
     background-position: center;
-    height: 120vh;
+    height: 110%;
+    
+    @media only screen and (max-width: 85.63em) and (orientation: landscape) {
+        height: 100vh;
+    }
 
-    @include respond(mini-tab-land) {
+    @media only screen and (max-width: 85.63em) and (max-height: 50em) {
+        height: 110%;
+    }
+
+    @media only screen and (max-width: 64em) and (orientation: portrait)  {
         height: 100vh;
     }
 
@@ -25,6 +33,7 @@
     grid-row-gap: 2.5rem;
     width: 75vw;
     margin: 2rem auto;
+    padding-bottom: 4rem;
 
     @include respond(tab-port) {
         grid-template-columns: repeat(4, 1fr);
@@ -33,8 +42,8 @@
     @include respond(sm-phone) {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         width: 90vw;
-        margin-left: 3rem;
     }
 
     &__wrapper {
@@ -56,6 +65,12 @@
         &--3 {
             grid-column: 4 / 5;
             grid-row: 3 / 4;
+
+            @include respond(tab-port) {
+                grid-column: 1 / -1;
+                grid-row: 4 / 5;
+                justify-content: center;
+            }
         }
 
     }

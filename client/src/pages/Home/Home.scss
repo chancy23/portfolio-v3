@@ -1,4 +1,5 @@
 @import '../../sass/variables.scss';
+@import '../../sass/mixins.scss';
 
 .container-home {
     // position: relative;
@@ -9,34 +10,67 @@
 
 }
 
-.home__text-container {
-    &--primary { 
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 6rem;
-        text-align: center;
-        width: 100%
-    }
+.home {
+    &__text-container {
+        &--primary { 
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 6rem;
+            text-align: center;
+            width: 100%;
 
-    &--secondary {
-        position: absolute;
-        font-size: 2rem;
-        top: 65%;
-        left: 50%;
-        transform: translateX(-50%)
-    }
-}
+            @media only screen and (max-width: 850px) and (max-height: 425px) {
+                top: 40%;
+            }
 
-.home__list {
-    display: flex;
-    list-style: none;
+            @include respond(sm-phone) {
+                font-size: 7rem;
+                top: 40%;
+            }
+        }
 
+        &--secondary {
+            position: absolute;
+            font-size: 2rem;
+            top: 65%;
+            left: 50%;
+            transform: translateX(-50%);
 
-    &-item {
+            @include respond(sm-phone) {
+                top: 68%;
+            }
+        }
+
         
-        padding: 2rem;
+    }
+
+    &__title {
+
+        @include respond(sm-phone) {
+            line-height: 1.1;
+        }
+
+        span {
+            color:$color-primary;
+    
+            @include respond(sm-phone) {
+                display: none;
+            }
+        }
+
+    }
+
+    &__list {
+        display: flex;
+        list-style: none;
+
+
+        &-item {
+            
+            padding: 2rem;
+        }
     }
 }
 
