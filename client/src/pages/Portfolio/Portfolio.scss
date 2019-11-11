@@ -52,20 +52,20 @@
 
         &:nth-child(1) {
             background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
-                url(../../images/portfolioBGIs/newspaper_bgi.jpg);
+                url(../../images/portfolioBGIs/resilient_resinBGI.jpg);
             background-size: cover;
             background-position: left;
         }
  
         &:nth-child(2) {
             background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)),
-            url(../../images/portfolioBGIs/partyBGI.jpg);
+            url(../../images/portfolioBGIs/magnolia-bgi_lowSat.jpg);
             background-size: cover;
             background-position: center;
         }
 
         &:nth-child(3) {
-            background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+            background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)),
             url(../../images/portfolioBGIs/tattooarms_bgi.jpg);
             background-size: cover;
             background-position: center;
@@ -139,10 +139,10 @@
     }
 
     &__back-text {
+        font-size: 1.2rem;
         line-height: 1.6rem;
 
         @include respond(tab-land) {
-            font-size: 1.2rem;
             line-height: 1.3rem;
         }
         @include respond(mini-tab-port) {

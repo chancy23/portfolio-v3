@@ -1,4 +1,3 @@
-//send data to and from backend
 import axios from 'axios';
 
 export default {

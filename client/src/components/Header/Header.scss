@@ -7,14 +7,14 @@
     margin-bottom: 2rem;
 
     &__logo-wrapper {
+        background-color: $color-light-grey;
+        cursor: pointer;
+        height: 8rem;
         margin-left: 4rem;
         padding: .5rem;
         padding-top: 1.75rem;
-        background-color: $color-light-grey;
         width: 6.5rem;
-        height: 8rem;
-        cursor: pointer;
-
+        
         display: flex;
         align-items: center;
         justify-content: center;
@@ -34,7 +34,7 @@
         width: 0;
         // padding: 1rem;
         transition: all .2s;
-        // transition: all cubic-bezier(.17,.67,.83,.67) .5s;
+        //transition: width cubic-bezier(.17,.67,.83,.67) .5s;
 
         &:hover {
             display: flex;
@@ -47,13 +47,13 @@
     }
 
     &__list {
-        list-style: none;
         display: flex;
-
+        list-style: none;
+        
         @media only screen and (max-width: 450px) {
-           flex-direction: column;
            height: 100%;
            margin-left: 1rem;
+           flex-direction: column;
            align-items: center;
            justify-content: center;
         }
@@ -84,14 +84,10 @@
         display: flex;
         align-items: center;
         width: 100%;
-        
-        //look like its expanding from left to right
     }
 
     &__logo-wrapper:hover ~ &__title,
     &__text-wrapper:hover + &__title {
         display: none;
     }
-
-    
 }

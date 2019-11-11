@@ -31,8 +31,14 @@
         width: 80%;
         transform: translate(-50%,-50%);
         z-index: 200;
+        animation: animatetop .3s ease-in;
 
     }
+
+    @keyframes animatetop {
+        from {top:-300px; opacity:0}
+        to {top:0; opacity:1}
+      }
 
     &__text-header {
         margin-bottom: .75rem;  
@@ -48,7 +54,6 @@
         width: 25%;
         height: 25%;
         border-radius: 100rem;
-        // margin: 1rem 0;
     }
 
     // make text area curve around image
@@ -65,7 +70,6 @@
 
     &__button {
         margin-right: 5rem;
-        // z-index: 5;
     }
 
 }

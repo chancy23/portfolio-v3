@@ -1,8 +1,16 @@
-import React from 'react';
+import React, {useContext, useEffect} from 'react';
 import { GlobalContext } from '../../context/GlobalState';
 import { PrinterIcon } from '../Icons';
 
 export const ResumeModal = () => {
+
+  const context = useContext(GlobalContext);
+
+  //this prevents scrolling of the body when modals are open
+  useEffect(() => {
+      context.state.showResumeModal ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'unset';
+  }, [context.state.showResumeModal]);
+
   return (
     <GlobalContext.Consumer>
       {context => {
@@ -14,16 +22,16 @@ export const ResumeModal = () => {
               <div className='modal__body'>
 
                 <div className='resume__section'>
-                  <h5 className="resume__section-head">Summary</h5>
+                  <h4 className="resume__section-head">Summary</h4>
                   <div className="resume__section-text">
                     <p>Detail-oriented full stack Software Engineer and Certified Usability Analyst passionate about creating
                       mobile responsive web applications with excellent design and usability. Highly skilled in Agile methodology. Strong communicator and ongoing learner.
                     </p>
                   </div>
                 </div>
-                  
+
                 <div className='resume__section'>
-                  <h5 className='resume__section-head'>Skills</h5>
+                  <h4 className='resume__section-head'>Skills</h4>
                   <div className='resume__section-text'>
                     <table className='resume__table'>
                       <thead className='resume__table-head'>
@@ -36,10 +44,10 @@ export const ResumeModal = () => {
                       </thead>
                       <tbody className='resume__table-body'>
                         <tr>
-                          <td>HTML5<br/>CSS3<br/>JavaScript (ES6)<br/>Sass</td>
-                          <td>React<br/>jQuery<br/>Materialize<br/>Bootstrap<br/>Handlebars</td>
-                          <td>Node / NPM<br/>Express<br/>MongoDB<br/>MySQL<br/>REST/JSON API</td>
-                          <td>GitHub<br/>Slack<br/>Zoom<br/>Trello<br/>Visual Studio Code</td>
+                          <td>HTML5<br />CSS3<br />JavaScript (ES6)<br />Sass<br />.NET Core</td>
+                          <td>React<br />jQuery<br />Materialize<br />Bootstrap<br />Handlebars</td>
+                          <td>Node / NPM<br />Express<br />C#<br />MongoDB<br />MySQL / SQL<br />REST/JSON API</td>
+                          <td>GitHub<br />Slack<br />Zoom<br />Trello<br />VS Code<br />Visual Studio</td>
                         </tr>
                       </tbody>
                     </table>
@@ -47,30 +55,71 @@ export const ResumeModal = () => {
                 </div>
 
                 <div className='resume__section'>
-                  <h5 className='resume__section-head'>Certifications</h5>
+                  <h4 className='resume__section-head'>Certifications</h4>
                   <div className='resume__section-text'>
                     <p>
-                      University of Utah<br/>
+                      University of Utah<br />
                       Full Stack Web Development Certification
                     </p>
                     <p>
-                      Human Factors International<br/>
+                      Human Factors International<br />
                       Certified Usability Analyst (#2013-4550)
                     </p>
                     <p>
-                      Project Management Institute<br/>
+                      Project Management Institute<br />
                       Certified Associate in Project Management (#2212176)
                     </p>
                   </div>
                 </div>
-                            
-                <div className='resume__section'>         
-                  <h5 className='resume__section-head'>Professional Experience</h5>
-                    
+
+                <div className='resume__section'>
+                  <h4 className='resume__section-head'>Professional Experience</h4>
+
                   <div className='resume__section-text'>
                     <div className='margin-top-small'>
-                      <h6>Project Management Support and Special Projects <br/>
-                        Verizon | 2016-2018</h6>
+                      <h5>Front End Developer<br />
+                        Salt Lake County | 2019-Present</h5>
+                    </div>
+                    <div>
+                      <p>Part of the team responsible for implementing a new multi-county property assessment software for Salt Lake County Assessor's office.</p>
+                      <ul className='resume__list'>
+                        <li>
+                          Conducted manual user testing of the new system.
+                        </li>
+                        <li>
+                          Wrote user documentation and How To guides for software’s end users.
+                        </li>
+                        <li>
+                          Built bridge systems to compensate for unique items needed by Salt Lake County that are not needed by less populated counties in the state.
+                        </li>
+                      </ul>  
+                    </div>
+                    <div className='margin-top-small'>
+                      <h5>Web Developer<br />
+                        Freelance | 2019-Present</h5>
+                    </div>
+                    <div>
+                      <p>Collaborated with clients to transform their visions and goals 
+                        into beautiful and responsive websites, using modern development stacks. 
+                      </p>
+                      <ul className='resume__list'>
+                        <li>
+                          Build mock-ups for customer approval during the early stages of development.
+                        </li>
+                        <li>
+                          Provide continual updates and weekly check-ins with clients to ensure a high level of understanding of the development process.
+                        </li>
+                        <li>
+                          Design a unique brand and aesthetics for their websites.
+                        </li>
+                        <li>
+                          Provide on going support and additional feature implementation.
+                        </li>
+                      </ul>
+                    </div>
+                    <div className='margin-top-small'>
+                      <h5>Project Management Support and Special Projects <br />
+                        Verizon | 2016-2018</h5>
                     </div>
                     <div>
                       <p>Tracked and monitored Associate Director’s team’s projects, maintaining yearly
@@ -99,10 +148,10 @@ export const ResumeModal = () => {
                         </li>
                       </ul>
                     </div>
-                                
+
                     <div className='margin-top-small'>
-                      <h6>Product Manager<br/>
-                        Verizon | 2011-2016</h6>
+                      <h5>Product Manager<br />
+                        Verizon | 2011-2016</h5>
                     </div>
                     <div>
                       <p>Managed 8-10 internal tools used by over 30,000 front line representatives which
@@ -132,53 +181,30 @@ export const ResumeModal = () => {
                             relevant and accessible information.</li>
                       </ul>
                     </div>
-
-                    <div className='margin-top-small'>
-                      <h6>National Communications Consultant<br/>
-                        Verizon | 2009-2011</h6>
-                    </div>
-                    <div>
-                      <p>Collaborated with Headquarters and Area contacts and drafted and/or reviewed
-                        communications regarding device, product, and
-                        plan/feature launches and/or updates. Created and maintained intranet pages for
-                        various groups within the Headquarters
-                        Customer Service organization. Partnered with Public Relations department for
-                        stories to include in internal employee
-                        newsletter, and sent newsletter weekly via email.
-                      </p>
-                      <ul className='resume__list'>
-                        <li>Revamped user experience by reformatting multiple intranet web pages for
-                          various teams as part of the site redesign
-                          and movement of existing content to the newest version of the site.</li>
-                        <li>Reduced form submission times for subject matter experts by creating a
-                          new streamlined form submission
-                          process on the new intranet site by 10%.</li>
-                      </ul>
-                    </div>
                   </div>
                 </div>
-                      
+
                 <div className='resume__section'>
-                  <h5 className='resume__section-head'>Education</h5>
+                  <h4 className='resume__section-head'>Education</h4>
                   <div className='resume__section-text'>
                     <p>
-                      University of Wyoming; Laramie, WY<br/>
+                      University of Wyoming; Laramie, WY<br />
                       Completed coursework towards Bachelor of Arts in Communication
                     </p>
                   </div>
                 </div>
               </div>
-   
-            <div className='modal__footer margin-top-small'>
-              <a className='link resume__link' href='https://drive.google.com/file/d/1qloln6T-Zs8829QgRCYPAR6R3LB4lrji/view?usp=sharing' target='_blank' rel='noopener noreferrer'><PrinterIcon /></a>
-              <button className='btn btn__primary modal__button' onClick={context.hideModal}>Close</button>
-            </div>               
+
+              <div className='modal__footer margin-top-small'>
+                <a className='link resume__link' href='https://drive.google.com/file/d/1hB0AoGsu32JdPabVup_wFEPWvfgFx_x4/view?usp=sharing' target='_blank' rel='noopener noreferrer'><PrinterIcon /></a>
+                <button className='btn btn__primary modal__button' onClick={context.hideModal}>Close</button>
+              </div>
+            </div>
           </div>
-        </div>
         )
       }}
     </GlobalContext.Consumer>
   );
 };
-                        
+
 // export default ResumeModal;
