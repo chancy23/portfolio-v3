@@ -38,7 +38,7 @@
     @keyframes animatetop {
         from {top:-300px; opacity:0}
         to {top:0; opacity:1}
-      }
+    }
 
     &__text-header {
         margin-bottom: .75rem;  
@@ -48,12 +48,25 @@
         display: flex; 
         margin: 2rem; 
         margin-right: 5rem;
+
+        @include respond(phone){
+            flex-direction: column;
+            align-items: center;
+            margin-right: 1rem;
+            margin-left: 1rem;
+        }
     }
 
     &__image {
         width: 25%;
         height: 25%;
         border-radius: 100rem;
+
+        @include respond(phone){
+            margin-bottom: 2rem;
+            width: 50%;
+            height: 50%;
+        }
     }
 
     // make text area curve around image
@@ -70,6 +83,14 @@
 
     &__button {
         margin-right: 5rem;
+
+        @include respond(tab-port){
+            margin-right: 2rem !important;
+        }
+
+        @include respond(phone){
+            margin-right: 1rem !important;
+        }
     }
 
 }
@@ -79,6 +100,14 @@
     &__header {
         margin-left: 5rem;
         margin-top: 2rem;
+
+        @include respond(tab-port){
+            margin-left: 2rem;
+        }
+
+        @include respond(phone) {
+            margin-left: 1rem;
+        }
     }
 
     &__section-head {
@@ -88,6 +117,31 @@
 
     &__section-text {
         margin: 0 5rem;
+
+        @include respond(tab-port){
+            margin: 0 2rem;
+        }
+
+        @include respond(phone) {
+            margin: 0 1rem;
+        }
+    }
+
+    &__skills {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        justify-items: center;
+        margin-top: 1rem;;
+        text-align: center;
+
+        @include respond(phone){
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    &__skills-header {
+        font-size: .9rem;
     }
 
     &__list {
@@ -99,14 +153,13 @@
     &__link {
         margin-left: 5rem;
         margin-right: auto;
-    }
 
-    &__button {
-        margin-right: 5rem;
-    }
+        @include respond(tab-port){
+            margin-left: 2rem;
+        }
 
-    &__table {
-        margin: 0 auto;
+        @include respond(phone) {
+            margin-left: 1rem;
+        }
     }
-
 }

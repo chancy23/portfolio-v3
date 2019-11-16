@@ -6,11 +6,11 @@
     background-image: linear-gradient(to right, rgba(0,0,0,.8), rgba(0,0,0,.8)), url('../../images/technology-bgi.jpg');
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    min-height: 100vh;
 
-    @media only screen and (max-width: 850px) and (max-height: 425px) {
-        height: 100%;
-    }
+    // @media only screen and (max-width: 850px) and (max-height: 425px) {
+    //     height: 100%;
+    // }
 }
 
 .contact {
@@ -18,22 +18,29 @@
     grid-template-columns: 25rem 1fr;
     grid-column-gap: 3rem;
     grid-row-gap: 3rem;
+    margin: 0 auto;
+    padding-bottom: 10rem;
     width: 60vw;
-    margin: 0 auto; //margin bottom if needed 5.75rem;
-
+   
     @include respond(tab-land) {
         grid-column-gap: 2rem;
         width: 80vw;
+    }
 
+    @media only screen and (max-width: 850px) and (max-height: 425px) {
+        padding-bottom: 5rem;
     }
 
     @include respond(mini-tab-port) {
         grid-template-columns: 100%;
+        padding-bottom: 5rem;
         width: 60vw;
     }
 
     @include respond(sm-phone) {
+        grid-row-gap: 4rem;
         margin-bottom: 2rem;
+        padding-bottom: 2rem;
         width: 80vw;
     }
 
@@ -53,7 +60,13 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        margin-top: 3rem;;
+        margin-top: 3rem;
+
+        @include respond(mini-tab-port) {
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-evenly;
+        }
     }
 
     &__link {
@@ -61,14 +74,13 @@
     }
 
     &__icon {
-        width: 4rem;
         height: 4rem;
+        width: 4rem;
         transition: all .2s;
 
         &:last-child:hover {
             transform: scale(1.2);
         }
-
     }
 
     &__phone {
@@ -83,9 +95,10 @@
     }
 
     &__message-display {
-        text-align: center;
-        margin: 1rem auto;
-        font-size: 1.2rem;
         color: $color-primary;
+        font-size: 1.2rem;
+        margin: 1rem auto;
+        padding-bottom: -1rem;
+        text-align: center;
     }
 }

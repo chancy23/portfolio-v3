@@ -32,25 +32,23 @@ export const ResumeModal = () => {
 
                 <div className='resume__section'>
                   <h4 className='resume__section-head'>Skills</h4>
-                  <div className='resume__section-text'>
-                    <table className='resume__table'>
-                      <thead className='resume__table-head'>
-                        <tr>
-                          <th>Front End</th>
-                          <th>Libraries / Frameworks</th>
-                          <th>Back End / Database</th>
-                          <th>Other</th>
-                        </tr>
-                      </thead>
-                      <tbody className='resume__table-body'>
-                        <tr>
-                          <td>HTML5<br />CSS3<br />JavaScript (ES6)<br />Sass<br />.NET Core</td>
-                          <td>React<br />jQuery<br />Materialize<br />Bootstrap<br />Handlebars</td>
-                          <td>Node / NPM<br />Express<br />C#<br />MongoDB<br />MySQL / SQL<br />REST/JSON API</td>
-                          <td>GitHub<br />Slack<br />Zoom<br />Trello<br />VS Code<br />Visual Studio</td>
-                        </tr>
-                      </tbody>
-                    </table>
+                  <div className='resume__section-text resume__skills'>
+                    <div>
+                      <h5 className='resume__skills-header'>Front End</h5>
+                      <p>HTML5<br />CSS3<br />JavaScript (ES6)<br />Sass<br />.NET Core</p>
+                    </div>
+                    <div>
+                      <h5 className='resume__skills-header'>Libraries / Frameworks</h5>
+                      <p>React<br />jQuery<br />Materialize<br />Bootstrap<br />Handlebars</p>
+                    </div>
+                    <div>
+                      <h5 className='resume__skills-header'>Back End / Database</h5>
+                      <p>Node / NPM<br />Express<br />C#<br />MongoDB<br />MySQL / SQL<br />REST/JSON API</p>
+                    </div>
+                    <div>
+                      <h5 className='resume__skills-header'>Other</h5>
+                      <p>GitHub<br />Slack<br />Zoom<br />Trello<br />VS Code<br />Visual Studio</p>
+                    </div>
                   </div>
                 </div>
 

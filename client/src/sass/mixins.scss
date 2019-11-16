@@ -10,7 +10,7 @@
     }
 
     @if $breakpoint == mini-tab-port {
-        @media only screen and (max-width: 43.75em) { @content }; //700px
+        @media only screen and (max-width: 46.88em) { @content }; //700px
     }
 
     @if $breakpoint == tab-port {

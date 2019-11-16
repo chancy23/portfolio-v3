@@ -5,7 +5,7 @@ const data = [
         technology: 'React React-Router Sass SVG Icons Google Fonts Express Express-Sessions bcrypt Node Nodemailer MongoDB Axios Cloudinary Widget PayPal Buttons Mobile Responsive',
         deployed: "https://www.resilientresin.com",
         repository: "https://github.com/chancy23/resilient-resin",
-        video: 'https://drive.google.com/file/d/1LYh8AjftOwv-AYl6SwVV3M26d5OF6Qcu/view?usp=sharing'
+        video: 'https://drive.google.com/file/d/1-flGJ2lofPRwaOY3rY4Nfz2r1J-hdMqv/view?usp=sharing'
     },
     {
         name: 'Magnolia Bliss Magazine',
@@ -13,7 +13,7 @@ const data = [
         technology: 'Handelbars Sass JavaScript jQuery Flipbook plugin Google Fonts Font Awesome Express Express-Sessions bcrypt Node Nodemailer MongoDB Axios Stripe Payments Mobile Responsive',
         deployed: "https://www.magnoliablissmagazine.com",
         repository: "https://github.com/chancy23/magnolia-bliss-magazine",
-        video: 'https://drive.google.com/file/d/1LYh8AjftOwv-AYl6SwVV3M26d5OF6Qcu/view?usp=sharing'
+        video: 'https://drive.google.com/file/d/1TQph7tGQos4q85UqPJ3t7QHau5Ydi03G/view?usp=sharing'
     },
     {
         name: 'Tatu',

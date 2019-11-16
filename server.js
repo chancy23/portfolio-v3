@@ -1,15 +1,22 @@
 const express = require('express');
-// const mongoose = require('mongoose');
+const expressEnforcesSSL = require('express-enforces-ssl');
 const routes = require('./routes');
 const path = require('path');
 const dotenv = require('dotenv').config();
 
-
 const PORT = process.env.PORT || 3001;
-
-//sets up Express as our server
 const app = express();
 
+if(process.env.NODE_ENV === 'production') {
+  app.set('trust proxy', 1);
+  app.use(expressEnforcesSSL());
+}
+else {
+  app.disable(expressEnforcesSSL());
+};
+
+//express sessions setup 
+app.disable('x-powered-by');
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
@@ -22,21 +29,7 @@ if (process.env.NODE_ENV === 'production') {
   app.use(express.static('client/build'));
 };
 
-// Connect to the Mongo DB
-// let MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/resilientResinProducts';
-// mongoose.connect(
-//   MONGODB_URI, { 
-//     useNewUrlParser: true,
-//     useFindAndModify: false
-//   }
-// );
-
-// console.log(MONGODB_URI);
-
-// Add routes, both API and view (view is handled by React, so no html routes will be needed)
 app.use(routes);
-
-//tells path when not using an API route
 app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname, '/../client/build/index.html'));
 });

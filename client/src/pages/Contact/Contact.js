@@ -9,13 +9,11 @@ const Contact = () => {
   return (
   <GlobalContext.Consumer>
     {context => {
-
-    const showHide = context.state.displayMessage ? 'visible contact__message-display' : 'hidden' ;      
+      const showHide = context.state.displayMessage ? 'visible contact__message-display' : 'hidden';      
 
       return (
         <main className="container-contact">
           <Header />
-          {/* <h1 className='center'>Contact</h1> */}
           <article className='contact'>
           <h1 className='contact__page-header'>Contact</h1>
             <section className='contact__email'>
@@ -128,7 +126,6 @@ const Contact = () => {
       )
     }}
   </GlobalContext.Consumer>
-  
   );
 };
 

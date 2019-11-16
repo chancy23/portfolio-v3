@@ -3,7 +3,7 @@
     color: $color-primary;
 
     &:hover {
-        color: darken($color-primary, 10%);
+        color: darken($color-primary, 15%);
     }
 }
 
@@ -12,6 +12,10 @@
     color: $font-color-primary;
   
     &:hover {
-      color: $color-primary;
+      color: darken($color-primary, 15%);
     }
+}
+
+.active {
+    color: $color-primary
 }
