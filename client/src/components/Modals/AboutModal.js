@@ -3,7 +3,7 @@ import { GlobalContext } from '../../context/GlobalState';
 import profileImage from '../../images/chancyleath.jpg';
 
 export const AboutModal = () => {
-  
+
   const context = useContext(GlobalContext);
 
   //this prevents scrolling of the body when modals are open
@@ -16,7 +16,6 @@ export const AboutModal = () => {
       {context => {
         // toggle class of modal to show or hide it
         const showHide = context.state.showAboutModal ? 'modal modal--display' : 'modal modal--hidden';
-        // TODO: add setting body scroll to hidden when modal is open.
 
         return (
           <div className={showHide}>

@@ -15,11 +15,9 @@
     grid-template-rows: repeat(2, max-content);
     grid-column-gap: 3rem;
     grid-row-gap: 4rem;
-    // width: 60vw;
     justify-content: center;
     margin: 2rem auto;
     padding-bottom: 10rem;
-    //height: 100%;
 
     @media only screen and (max-width: 64em) and (orientation: portrait) {
         padding-bottom: 20rem;
@@ -98,7 +96,6 @@
             height: 31rem;
         }
 
-
         // flips back over for description
         &:hover .project__side--front {
             transform: rotateY(-180deg);
@@ -108,10 +105,6 @@
             transform: rotateY(0);
         }
     }
-
-    // &__wrapper > :not(&__cta) {
-    //     transform: rotateY(none);
-    // }
 
     &__side {
         backface-visibility: hidden;
@@ -156,7 +149,6 @@
         }
     }
 
-
     &__header {
         font-size: 3rem;
         margin: 4rem 2rem;
@@ -196,24 +188,10 @@
     &__btn {
         padding: .5rem 1rem;
         transition: all .2s;
-        
 
         &:hover {
             transform: scale(1.2);
         }
-
-        &--deployed {
-
-        }
-
-        &--repository {
-
-        }
-
-        &--video {
-            
-           
-        } 
     }
     
 

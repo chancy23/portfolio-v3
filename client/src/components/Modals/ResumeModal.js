@@ -204,5 +204,3 @@ export const ResumeModal = () => {
     </GlobalContext.Consumer>
   );
 };
-
-// export default ResumeModal;
