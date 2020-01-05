@@ -7,7 +7,6 @@ export const GlobalContext = React.createContext();
 class GlobalState extends Component {
   //define all state for all of app components
   state = {
-    name: "Chancy Leath",
     firstName: '',
     lastName: '',
     email: '',
@@ -66,7 +65,7 @@ class GlobalState extends Component {
       preferredMethod: this.state.preferredMethod,
       messageDetails: this.state.messageDetails
     };
-    // send data to backend to send via nodemailer
+    
     API.sendEmail(emailData)
     .then(response => {
       console.log('response from send email', response);
