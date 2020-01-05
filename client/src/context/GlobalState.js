@@ -45,7 +45,6 @@ class GlobalState extends Component {
   handleInputChange = event => {
     event.preventDefault();
     const { name, value } = event.target;
-    console.log('event', event.target.value);
 
     this.setState({
       [name]: value
@@ -67,7 +66,6 @@ class GlobalState extends Component {
       preferredMethod: this.state.preferredMethod,
       messageDetails: this.state.messageDetails
     };
-    console.log('data for email', emailData);
     // send data to backend to send via nodemailer
     API.sendEmail(emailData)
     .then(response => {

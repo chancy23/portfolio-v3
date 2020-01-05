@@ -2,9 +2,6 @@ const nodemailer = require('nodemailer');
 
 module.exports = {
     sendEmail: (req, res) => {
-        console.log('email data from front end', req.body);
-        res.send('sent');
-
         //send email via nodemailer
         var EMAIL_ADDRESS = process.env.EMAIL_ADDRESS;
         var EMAIL_PASSWORD = process.env.EMAIL_PASSWORD;
@@ -35,6 +32,7 @@ module.exports = {
         transporter.sendMail(mailOptions, function (err, response) {
           if (err) {
             console.error('there was an error: ', err);
+            res.status(404).json('email error')
           }
           else {
             console.log('here is the response: ', response);
