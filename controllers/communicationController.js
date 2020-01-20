@@ -4,19 +4,24 @@ module.exports = {
     sendEmail: (req, res) => {
         //send email via nodemailer
         var EMAIL_ADDRESS = process.env.EMAIL_ADDRESS;
-        var EMAIL_PASSWORD = process.env.EMAIL_PASSWORD;
+        // var EMAIL_PASSWORD = process.env.EMAIL_PASSWORD;
   
         const transporter = nodemailer.createTransport({
-          service: 'gmail',
+          host: 'smtp.gmail.com',
+          port: 465,
+          secure: true,
           auth: {
+            type: 'OAuth2',
             user: EMAIL_ADDRESS,
-            pass: EMAIL_PASSWORD
+            clientId: process.env.CLIENT_ID,
+            clientSecret: process.env.CLIENT_SECRET,
+            refreshToken: process.env.REFRESH_TOKEN,
+            accessToken: process.env.ACCESS_TOKEN
           }
         });
   
         const mailOptions = {
           from: EMAIL_ADDRESS,
-          to: EMAIL_ADDRESS,
           to: 'chancyleath@hotmail.com',
           subject: 'Request for Information | chancyleath.com',
           text:
