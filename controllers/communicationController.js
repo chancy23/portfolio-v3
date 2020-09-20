@@ -4,8 +4,6 @@ module.exports = {
     sendEmail: (req, res) => {
         //send email via nodemailer
         var EMAIL_ADDRESS = process.env.EMAIL_ADDRESS;
-        // var EMAIL_PASSWORD = process.env.EMAIL_PASSWORD;
-        // console.log('client id', process.env.CLIENT_ID);
   
         const transporter = nodemailer.createTransport({
           host: 'smtp.gmail.com',
