@@ -4,7 +4,7 @@ import { GlobalContext } from '../../context/GlobalState';
 import Footer from '../../components/Footer';
 import Header from "../../components/Header";
 import data from '../../portfolioData';
-import { CodeIcon, DisplayIcon, PlayIcon} from '../../components/Icons';
+import { CodeIcon, CodeIconDisabled, DisplayIcon, PlayIcon} from '../../components/Icons';
 
 import './Portfolio.scss';
 
@@ -29,8 +29,22 @@ const Portfolio = () => {
                       <p className='project__back-text'>{project.description}</p>
                     </div>
                     <div className='project__cta'>
-                      <a className='project__btn project__btn--deployed' href={project.deployed} rel='noopener noreferrer' target='_blank'><DisplayIcon /></a>
-                      <a className='project__btn project__btn--repository' href={project.repository} rel='noopener noreferrer' target='_blank'><CodeIcon /></a>
+                      {project.deployed !== 'decomm' ?
+                        (
+                          <a className='project__btn project__btn--deployed' href={project.deployed} rel='noopener noreferrer' target='_blank'><DisplayIcon /></a>
+                        ) 
+                        :
+                        (false)
+                      }
+                      {project.privateRepo === false ?
+                        (
+                          <a className='project__btn project__btn--repository' href={project.repository} rel='noopener noreferrer' target='_blank'><CodeIcon /></a>
+                        )
+                        :
+                        (
+                          <CodeIconDisabled />
+                        )
+                      }
                       <a className='project__btn project__btn--video' href={project.video} rel='noopener noreferrer' target='_blank'><PlayIcon /></a>
                     </div>
                   </div>

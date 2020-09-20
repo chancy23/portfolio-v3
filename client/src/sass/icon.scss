@@ -46,4 +46,8 @@
         width: 2rem;
         height: 2rem;
     }
+
+    &--disabled {
+        fill: lighten($color-primary, 15%);
+    }
 }

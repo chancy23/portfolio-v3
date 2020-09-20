@@ -1,5 +1,6 @@
 export * from './CloseIcon';
 export * from './CodeIcon';
+export * from './CodeIconDisabled';
 export * from './DisplayIcon';
 export * from './GalleryIcon';
 export * from './GithubIcon';
