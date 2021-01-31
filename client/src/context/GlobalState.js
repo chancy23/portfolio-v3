@@ -91,7 +91,7 @@ class GlobalState extends Component {
     .catch(err =>  {
       console.log(err);
       this.setState({
-        displayMessage: true,
+        displayMessage: true, 
         message: "I'm sorry, it looks like there was a problem sending your email. Please try again or contact me at 801-891-2965.",
       })
     });
