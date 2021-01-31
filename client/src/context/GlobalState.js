@@ -63,7 +63,7 @@ class GlobalState extends Component {
       email: this.state.email,
       phoneNumber: this.state.phoneNumber,
       preferredMethod: this.state.preferredMethod,
-      messageDetails: this.state.messageDetails
+      messageDetails: this.state.messageDetails 
     };
     
     API.sendEmail(emailData)
