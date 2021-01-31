@@ -78,7 +78,7 @@ class GlobalState extends Component {
           email: '',
           phoneNumber: '',
           preferredMethod: '',
-          messageDetails: '',
+          messageDetails: '', 
         });
         setTimeout(() => {
           this.setState({
