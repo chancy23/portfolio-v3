@@ -1,20 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.f1b5ebed.chunk.css",
-    "main.js": "/static/js/main.a853a718.chunk.js",
-    "main.js.map": "/static/js/main.a853a718.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-    "static/js/2.764359b9.chunk.js": "/static/js/2.764359b9.chunk.js",
-    "static/js/2.764359b9.chunk.js.map": "/static/js/2.764359b9.chunk.js.map",
+    "main.css": "/static/css/main.e8adebf3.chunk.css",
+    "main.js": "/static/js/main.bab0e71c.chunk.js",
+    "main.js.map": "/static/js/main.bab0e71c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c012fedc.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c012fedc.js.map",
+    "static/js/2.a33838ba.chunk.js": "/static/js/2.a33838ba.chunk.js",
+    "static/js/2.a33838ba.chunk.js.map": "/static/js/2.a33838ba.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.a16a77dcf16d5847cbb0325782b8244b.js": "/precache-manifest.a16a77dcf16d5847cbb0325782b8244b.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.f1b5ebed.chunk.css.map": "/static/css/main.f1b5ebed.chunk.css.map",
-    "static/media/Home.scss": "/static/media/bgi_highway.509124ae.jpg",
-    "static/media/chancyleath.jpg": "/static/media/chancyleath.bd234863.jpg",
-    "static/media/Portfolio.scss": "/static/media/tattooarms_bgi.51f075da.jpg",
-    "static/media/Skills.scss": "/static/media/skills-bgi.c126e78d.jpg",
-    "static/media/Contact.scss": "/static/media/technology-bgi.5509543a.jpg"
-  }
+    "static/css/main.e8adebf3.chunk.css.map": "/static/css/main.e8adebf3.chunk.css.map",
+    "static/js/2.a33838ba.chunk.js.LICENSE.txt": "/static/js/2.a33838ba.chunk.js.LICENSE.txt",
+    "static/media/Home.scss": "/static/media/bgi_highway.306f09e3.jpg",
+    "static/media/chancyleath.97508920.jpg": "/static/media/chancyleath.97508920.jpg",
+    "static/media/Portfolio.scss": "/static/media/tattooarms_bgi.d2b6fb59.jpg",
+    "static/media/Skills.scss": "/static/media/skills-bgi.b2bbeadd.jpg",
+    "static/media/Contact.scss": "/static/media/technology-bgi.0440729e.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c012fedc.js",
+    "static/js/2.a33838ba.chunk.js",
+    "static/css/main.e8adebf3.chunk.css",
+    "static/js/main.bab0e71c.chunk.js"
+  ]
 }
