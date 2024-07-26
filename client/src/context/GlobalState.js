@@ -68,7 +68,7 @@ class GlobalState extends Component {
     
     API.sendEmail(emailData)
     .then(response => {
-      console.log('response from send email', response);
+      //console.log('response from send email', response);
       if (response.data === 'sent') {
         this.setState({
           displayMessage: true,

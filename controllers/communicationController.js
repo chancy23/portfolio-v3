@@ -31,7 +31,7 @@ module.exports = {
             `Details: ${req.body.messageDetails}`
         };
   
-        console.log('sending email');
+        //console.log('sending email');
   
         transporter.sendMail(mailOptions, function (err, response) {
           if (err) {
@@ -39,7 +39,7 @@ module.exports = {
             res.status(404).json('email error')
           }
           else {
-            console.log('here is the response: ', response);
+            //console.log('here is the response: ', response);
             res.status(200).json('sent');
           }
         });

@@ -1,9 +1,9 @@
 const data = [
     {
         name: 'Resilient Resin',
-        description: "An ecommerce site and owner portal for custom resin artwork. The products in the store are loaded by the business owner in an admin portal that also allows for seeing/updating orders, editing products and their images, and editing categories. Customers have a store (cart/checkout), photo gallery, about, contact, and an account pages (if created during checkout).",
+        description: "An ecommerce site and owner portal for custom resin artwork. The products in the store are loaded by the business owner in an admin portal that also allows for seeing/updating orders, editing products and their images, and editing categories. Customers have a store (cart/checkout), photo gallery, about, contact, and an account pages (if created during checkout). Note: The site was decommissioned at the client's request.",
         technology: 'React React-Router Sass SVG Icons Google Fonts Express Express-Sessions bcrypt Node Nodemailer MongoDB Axios Cloudinary Widget PayPal Buttons Mobile Responsive',
-        deployed: "https://www.resilientresin.com",
+        deployed: "decomm",
         repository: "https://github.com/chancy23/resilient-resin",
         video: 'https://drive.google.com/file/d/1-flGJ2lofPRwaOY3rY4Nfz2r1J-hdMqv/view?usp=sharing',
         privateRepo: true
@@ -21,7 +21,7 @@ const data = [
         name: 'Tatu',
         description: "A multi-user app built with the MERN stack. It allows artists to create profiles and upload images of their work that customers can then search and save to their favorites. My contribution: Overall design, built all front end components for the Customer page, built all back end routes/controllers for getting/posting images.",
         technology: 'React React-Router Express Express-Sessions bcrypt Node MongoDB Axios API React-Materialize Google Fonts Google Icons Mobile Responsive',
-        deployed: 'https://tatuappv2.herokuapp.com/',
+        deployed: 'decomm',
         repository: 'https://github.com/penajtokyo/tatu.git',
         video: 'https://drive.google.com/file/d/1LYh8AjftOwv-AYl6SwVV3M26d5OF6Qcu/view?usp=sharing',
         privateRepo: false

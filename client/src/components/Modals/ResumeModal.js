@@ -35,19 +35,19 @@ export const ResumeModal = () => {
                   <div className='resume__section-text resume__skills'>
                     <div>
                       <h5 className='resume__skills-header'>Front End</h5>
-                      <p>HTML5<br />CSS3<br />JavaScript (ES6)<br />Sass<br />.NET Core</p>
+                      <p>HTML5<br />CSS3<br />JavaScript<br />Sass<br /></p>
                     </div>
                     <div>
                       <h5 className='resume__skills-header'>Libraries / Frameworks</h5>
-                      <p>React<br />jQuery<br />Materialize<br />Bootstrap<br />Handlebars</p>
+                      <p>React<br />jQuery<br />Materialize<br />Angular<br />Sencha ExtJS</p>
                     </div>
                     <div>
                       <h5 className='resume__skills-header'>Back End / Database</h5>
-                      <p>Node / NPM<br />Express<br />C#<br />MongoDB<br />MySQL / SQL<br />REST/JSON API</p>
+                      <p>Node / NPM<br />Express<br />C# / .NET <br />MongoDB<br />SQL Server<br />REST/JSON</p>
                     </div>
                     <div>
                       <h5 className='resume__skills-header'>Other</h5>
-                      <p>GitHub<br />Slack<br />Zoom<br />Trello<br />VS Code<br />Visual Studio</p>
+                      <p>GitHub<br />Azure<br />CI / CD<br />VS Code<br />Visual Studio</p>
                     </div>
                   </div>
                 </div>
@@ -63,10 +63,6 @@ export const ResumeModal = () => {
                       Human Factors International<br />
                       Certified Usability Analyst (#2013-4550)
                     </p>
-                    <p>
-                      Project Management Institute<br />
-                      Certified Associate in Project Management (#2212176)
-                    </p>
                   </div>
                 </div>
 
@@ -75,26 +71,44 @@ export const ResumeModal = () => {
 
                   <div className='resume__section-text'>
                     <div className='margin-top-small'>
-                      <h5>Front End Developer<br />
+                      <h5>Web Developer<br />
                         Salt Lake County | 2019-Present</h5>
                     </div>
                     <div>
-                      <p>Part of the team responsible for implementing a new multi-county property assessment software for Salt Lake County Assessor's office.</p>
+                      <p>Part of the team responsible for implementing a new multi-county property assessment SaaS used by the Salt Lake County Assessor’s office, as well as developing and maintaining tools and applications that integrate with the new software.</p>
                       <ul className='resume__list'>
                         <li>
-                          Conducted manual user testing of the new system.
+                          Develop a variety of scripts in SQL and PowerShell to convert main frame data reports into a consumable format for the new software, as well as integrating the Assessors’ office data with other departments within the county.
                         </li>
                         <li>
-                          Wrote user documentation and How To guides for software’s end users.
+                          Designed and developed a parcel review application for the Assessor's office using Angular, C# .NET Core, and SQL.
                         </li>
                         <li>
-                          Built bridge systems to compensate for unique items needed by Salt Lake County that are not needed by less populated counties in the state.
+                        Provide ongoing support for parcel review application, updating as user needs change or new features are requested.
+                        </li>
+                        <li>
+                          Refactored complicated data integrations to use Salt Lake County’s large dataset, within the SaaS C# and SQL code base, to improve speed by 600%, allowing these processes to work successfully.
+                        </li>
+                        <li>
+                          Develop frontend user interfaces for various property types within the SaaS code base, using the Sencha ExtJS framework.
+                        </li>
+                        <li>
+                          Write user documentation and How To guides for software’s end users, as well as assist in training features or new applications I develop. 
+                        </li>
+                        <li>
+                          Partner with SaaS team to define requirements for new features based on the unique needs of Salt Lake County, and then often code against those requirements to implement solutions that benefit multiple counties.
+                        </li>
+                        <li>
+                          Work closely with the SaaS provider’s quality assurance tester to define test cases for new features.
+                        </li>
+                        <li>
+                          Responsible for communicating project status and impediments effectively during departmental scrum meetings, on a rotating basis.
                         </li>
                       </ul>  
                     </div>
                     <div className='margin-top-small'>
                       <h5>Web Developer<br />
-                        Freelance | 2019-Present</h5>
+                        Freelance | 2019-2022</h5>
                     </div>
                     <div>
                       <p>Collaborated with clients to transform their visions and goals 
@@ -113,6 +127,7 @@ export const ResumeModal = () => {
                         <li>
                           Provide on going support and additional feature implementation.
                         </li>
+                       
                       </ul>
                     </div>
                     <div className='margin-top-small'>
@@ -144,39 +159,6 @@ export const ResumeModal = () => {
                           vetted and interviewed potential vendors, and presented findings back to
                           the team.
                         </li>
-                      </ul>
-                    </div>
-
-                    <div className='margin-top-small'>
-                      <h5>Product Manager<br />
-                        Verizon | 2011-2016</h5>
-                    </div>
-                    <div>
-                      <p>Managed 8-10 internal tools used by over 30,000 front line representatives which
-                        included implementing changes based on
-                        business needs, reviewing and implementing user feedback, communication and
-                        training
-                        on tool updates. Created process
-                        maps and flows from different reference materials into one guided flow for
-                        users.
-                      </p>
-                      <ul className='resume__list'>
-                        <li>Reduced call handle time, on average 10-15 seconds per call, and
-                            increased
-                            user
-                            experience by creating smarter versions
-                            of several guided flow tools, incorporating account specific
-                            information,
-                            via billing account APIs, directly into the tool
-                            where it was needed.</li>
-                        <li>Enhanced user experience by redesigning an our information portal to
-                            allow
-                            for easier access to information and the
-                            ability to customize the information they saw.</li>
-                        <li>Elevated First Call Resolution and representative understanding on new
-                            products or services by collaborating with subject
-                            matter experts during launches to create or update tools that provided
-                            relevant and accessible information.</li>
                       </ul>
                     </div>
                   </div>
